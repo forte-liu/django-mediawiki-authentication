@@ -1,14 +1,14 @@
 {
-    "name": "AuthDjangoPostgres",
-    "author": [
-        "mpetroff",
-        "niklasgranander",
-        "majsvaffla",
-    ],
-    "version": "1.0 20170722",
-    "url": "https://github.com/forte-liu/django-mediawiki-authentication",
-    "requires": {
-        "MediaWiki": ">= 1.28.1"
-    },
-    "manifest_version": 1,
+	"name": "AuthDjangoPostgres",
+	"author": [
+		"mpetroff",
+		"niklasgranander",
+		"majsvaffla"
+	],
+	"version": "1.0 20170722",
+	"url": "https://github.com/forte-liu/django-mediawiki-authentication",
+	"requires": {
+		"MediaWiki": ">= 1.28.1"
+	},
+	"manifest_version": 1
 }
