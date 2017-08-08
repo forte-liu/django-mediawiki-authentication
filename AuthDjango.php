@@ -5,12 +5,11 @@
 // Configuration variables
 $wgAuthDjangoConfig = array();
 
-$wgAuthDjangoConfig['DjangoHost']   = 'localhost';   // Django PostgreSQL Host Name.
-$wgAuthDjangoConfig['DjangoPort']   = '5432';	     // Django PostgreSQL port
-$wgAuthDjangoConfig['DjangoUser']   = 'mediawiki';   // Django PostgreSQL Username.
-require_once('../../db_credentials.php');
-$wgAuthDjangoConfig['DjangoPass']   = $wgDBpassword; // Django PostgreSQL Password.
-$wgAuthDjangoConfig['DjangoDBName'] = $wgDBuser;     // Django PostgreSQL Database Name.
+$wgAuthDjangoConfig['DjangoHost']   = 'localhost';                 // Django PostgreSQL Host Name.
+$wgAuthDjangoConfig['DjangoPort']   = '5432';	                   // Django PostgreSQL port
+$wgAuthDjangoConfig['DjangoUser']   = 'mediawiki';                 // Django PostgreSQL Username.
+$wgAuthDjangoConfig['DjangoPass']   = getenv('DATABASE_PASSWORD'); // Django PostgreSQL Password.
+$wgAuthDjangoConfig['DjangoDBName'] = getenv('DATABASE_USER');     // Django PostgreSQL Database Name.
 
 $wgAuthDjangoConfig['AuthDjangoTable']      = 'authdjango';
 $wgAuthDjangoConfig['UserTable']            = 'auth_user';
