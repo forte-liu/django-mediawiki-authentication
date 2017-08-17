@@ -7,9 +7,9 @@ $wgAuthDjangoConfig = array();
 
 $wgAuthDjangoConfig['DjangoHost']   = 'localhost';                 // Django PostgreSQL Host Name.
 $wgAuthDjangoConfig['DjangoPort']   = '5432';	                   // Django PostgreSQL port
-$wgAuthDjangoConfig['DjangoUser']   = 'mediawiki';                 // Django PostgreSQL Username.
+$wgAuthDjangoConfig['DjangoUser']   = getenv('DATABASE_USER');     // Django PostgreSQL Username.
 $wgAuthDjangoConfig['DjangoPass']   = getenv('DATABASE_PASSWORD'); // Django PostgreSQL Password.
-$wgAuthDjangoConfig['DjangoDBName'] = getenv('DATABASE_USER');     // Django PostgreSQL Database Name.
+$wgAuthDjangoConfig['DjangoDBName'] = 'megabeta';                  // Django PostgreSQL Database Name.
 
 $wgAuthDjangoConfig['AuthDjangoTable']      = 'authdjango';
 $wgAuthDjangoConfig['UserTable']            = 'auth_user';
